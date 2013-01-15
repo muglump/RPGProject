@@ -1,9 +1,9 @@
 class CreateCharacters < ActiveRecord::Migration
   def change
-    create_table :characters do |t|
-      t.Integer :CharID
-      t.String :Name
-      t.Integer :SystemID
+    create_table :characters, {:primary_key => :charID} do |t|
+      t.integer :charID
+      t.string :name
+      t.foreign_key :systemID
 
       t.timestamps
     end

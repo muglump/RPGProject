@@ -1,9 +1,9 @@
 class CreateAttributes < ActiveRecord::Migration
   def change
-    create_table :attributes do |t|
-      t.Integer :AttrID
-      t.String :Name
-      t.String :Type
+    create_table :attributes, {:primary_key => :attrID} do |t|
+      t.integer :attrID
+      t.string :name
+      t.string :type
 
       t.timestamps
     end
