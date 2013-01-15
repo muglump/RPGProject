@@ -1,0 +1,37 @@
+<%= form_for(@system) do |f| %>
+  <% if @system.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@system.errors.count, "error") %> prohibited this system from being saved:</h2>
+
+      <ul>
+      <% @system.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :SystemId %><br />
+    <%= f.text_field :SystemId %>
+  </div>
+  <div class="field">
+    <%= f.label :Name %><br />
+    <%= f.text_field :Name %>
+  </div>
+  <div class="field">
+    <%= f.label :Diesystem %><br />
+    <%= f.text_field :Diesystem %>
+  </div>
+  <div class="field">
+    <%= f.label :ClassBased %><br />
+    <%= f.check_box :ClassBased %>
+  </div>
+  <div class="field">
+    <%= f.label :Genre %><br />
+    <%= f.text_field :Genre %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

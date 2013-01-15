@@ -1,0 +1,31 @@
+<h1>Listing systems</h1>
+
+<table>
+  <tr>
+    <th>Systemid</th>
+    <th>Name</th>
+    <th>Diesystem</th>
+    <th>Classbased</th>
+    <th>Genre</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @systems.each do |system| %>
+  <tr>
+    <td><%= system.SystemId %></td>
+    <td><%= system.Name %></td>
+    <td><%= system.Diesystem %></td>
+    <td><%= system.ClassBased %></td>
+    <td><%= system.Genre %></td>
+    <td><%= link_to 'Show', system %></td>
+    <td><%= link_to 'Edit', edit_system_path(system) %></td>
+    <td><%= link_to 'Destroy', system, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New System', new_system_path %>
