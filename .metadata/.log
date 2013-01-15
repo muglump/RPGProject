@@ -1,0 +1,127 @@
+!SESSION 2013-01-15 08:15:26.074 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.6.0_24
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY org.eclipse.core.resources 2 10035 2013-01-15 08:17:58.344
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY com.aptana.ruby.core 4 0 2013-01-15 08:23:08.271
+!MESSAGE (eval):1: Use RbConfig instead of obsolete and deprecated Config.
+(eval):1: warning: variable $= is no longer effective
+(eval):1: warning: variable $KCODE is no longer effective
+(eval):1: warning: variable $KCODE is no longer effective
+C:/Users/piliseal/.eclipse/org.eclipse.platform_3.7.0_1461546708/configuration/org.eclipse.osgi/bundles/90/1/.cp/ruby/core_stubber.rb:180:in `eval': Permission denied - C:\Users\piliseal\Desktop\RPGProject\.metadata\.plugins\com.aptana.ruby.core\80704545\4 (Errno::EACCES)
+	from C:/Users/piliseal/.eclipse/org.eclipse.platform_3.7.0_1461546708/configuration/org.eclipse.osgi/bundles/90/1/.cp/ruby/core_stubber.rb:180:in `eval'
+	from C:/Users/piliseal/.eclipse/org.eclipse.platform_3.7.0_1461546708/configuration/org.eclipse.osgi/bundles/90/1/.cp/ruby/core_stubber.rb:180:in `block (3 levels) in <main>'
+	from C:/Users/piliseal/.eclipse/org.eclipse.platform_3.7.0_1461546708/configuration/org.eclipse.osgi/bundles/90/1/.cp/ruby/core_stubber.rb:179:in `each'
+	from C:/Users/piliseal/.eclipse/org.eclipse.platform_3.7.0_1461546708/configuration/org.eclipse.osgi/bundles/90/1/.cp/ruby/core_stubber.rb:179:in `block (2 levels) in <main>'
+	from C:/Users/piliseal/.eclipse/org.eclipse.platform_3.7.0_1461546708/configuration/org.eclipse.osgi/bundles/90/1/.cp/ruby/core_stubber.rb:178:in `open'
+	from C:/Users/piliseal/.eclipse/org.eclipse.platform_3.7.0_1461546708/configuration/org.eclipse.osgi/bundles/90/1/.cp/ruby/core_stubber.rb:178:in `block in <main>'
+	from C:/Users/piliseal/.eclipse/org.eclipse.platform_3.7.0_1461546708/configuration/org.eclipse.osgi/bundles/90/1/.cp/ruby/core_stubber.rb:152:in `each'
+	from C:/Users/piliseal/.eclipse/org.eclipse.platform_3.7.0_1461546708/configuration/org.eclipse.osgi/bundles/90/1/.cp/ruby/core_stubber.rb:152:in `<main>'
+
+!SESSION 2013-01-15 08:23:30.937 -----------------------------------------------
+eclipse.buildId=3.3.1.201212171919
+java.version=1.6.0_24
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY com.aptana.ruby.core 4 0 2013-01-15 08:25:40.430
+!MESSAGE (eval):1: Use RbConfig instead of obsolete and deprecated Config.
+(eval):1: warning: variable $= is no longer effective
+(eval):1: warning: variable $KCODE is no longer effective
+(eval):1: warning: variable $KCODE is no longer effective
+C:/Users/piliseal/.eclipse/org.eclipse.platform_3.7.0_1461546708/configuration/org.eclipse.osgi/bundles/90/1/.cp/ruby/core_stubber.rb:180:in `eval': Permission denied - C:\Users\piliseal\Desktop\RPGProject\.metadata\.plugins\com.aptana.ruby.core\-941821722\4 (Errno::EACCES)
+	from C:/Users/piliseal/.eclipse/org.eclipse.platform_3.7.0_1461546708/configuration/org.eclipse.osgi/bundles/90/1/.cp/ruby/core_stubber.rb:180:in `eval'
+	from C:/Users/piliseal/.eclipse/org.eclipse.platform_3.7.0_1461546708/configuration/org.eclipse.osgi/bundles/90/1/.cp/ruby/core_stubber.rb:180:in `block (3 levels) in <main>'
+	from C:/Users/piliseal/.eclipse/org.eclipse.platform_3.7.0_1461546708/configuration/org.eclipse.osgi/bundles/90/1/.cp/ruby/core_stubber.rb:179:in `each'
+	from C:/Users/piliseal/.eclipse/org.eclipse.platform_3.7.0_1461546708/configuration/org.eclipse.osgi/bundles/90/1/.cp/ruby/core_stubber.rb:179:in `block (2 levels) in <main>'
+	from C:/Users/piliseal/.eclipse/org.eclipse.platform_3.7.0_1461546708/configuration/org.eclipse.osgi/bundles/90/1/.cp/ruby/core_stubber.rb:178:in `open'
+	from C:/Users/piliseal/.eclipse/org.eclipse.platform_3.7.0_1461546708/configuration/org.eclipse.osgi/bundles/90/1/.cp/ruby/core_stubber.rb:178:in `block in <main>'
+	from C:/Users/piliseal/.eclipse/org.eclipse.platform_3.7.0_1461546708/configuration/org.eclipse.osgi/bundles/90/1/.cp/ruby/core_stubber.rb:152:in `each'
+	from C:/Users/piliseal/.eclipse/org.eclipse.platform_3.7.0_1461546708/configuration/org.eclipse.osgi/bundles/90/1/.cp/ruby/core_stubber.rb:152:in `<main>'
+
+
+!ENTRY com.aptana.ruby.core 4 0 2013-01-15 08:26:05.381
+!MESSAGE (Build 3.3.1.201212171919) [ERROR]  Not supported yet.
+!STACK 0
+java.lang.UnsupportedOperationException: Not supported yet.
+	at org.jrubyparser.ast.LambdaNode.accept(LambdaNode.java:58)
+	at com.aptana.ruby.core.ast.AbstractVisitor.acceptNode(AbstractVisitor.java:37)
+	at com.aptana.ruby.core.ast.InOrderVisitor.visitHashNode(InOrderVisitor.java:414)
+	at org.jrubyparser.ast.HashNode.accept(HashNode.java:57)
+	at com.aptana.ruby.core.ast.AbstractVisitor.acceptNode(AbstractVisitor.java:37)
+	at com.aptana.ruby.core.ast.InOrderVisitor.visitCallNode(InOrderVisitor.java:193)
+	at com.aptana.ruby.core.ast.SourceElementVisitor.visitCallNode(SourceElementVisitor.java:230)
+	at org.jrubyparser.ast.CallNode.accept(CallNode.java:70)
+	at com.aptana.ruby.core.ast.AbstractVisitor.acceptNode(AbstractVisitor.java:53)
+	at com.aptana.ruby.core.ast.InOrderVisitor.visitLocalAsgnNode(InOrderVisitor.java:456)
+	at com.aptana.ruby.core.ast.SourceElementVisitor.visitLocalAsgnNode(SourceElementVisitor.java:839)
+	at org.jrubyparser.ast.LocalAsgnNode.accept(LocalAsgnNode.java:62)
+	at com.aptana.ruby.core.ast.AbstractVisitor.acceptNode(AbstractVisitor.java:53)
+	at com.aptana.ruby.core.ast.InOrderVisitor.visitIfNode(InOrderVisitor.java:438)
+	at org.jrubyparser.ast.IfNode.accept(IfNode.java:65)
+	at com.aptana.ruby.core.ast.AbstractVisitor.acceptNode(AbstractVisitor.java:53)
+	at com.aptana.ruby.core.ast.InOrderVisitor.visitNewlineNode(InOrderVisitor.java:525)
+	at org.jrubyparser.ast.NewlineNode.accept(NewlineNode.java:67)
+	at com.aptana.ruby.core.ast.AbstractVisitor.acceptNode(AbstractVisitor.java:37)
+	at com.aptana.ruby.core.ast.InOrderVisitor.visitDefnNode(InOrderVisitor.java:299)
+	at com.aptana.ruby.core.ast.SourceElementVisitor.visitDefnNode(SourceElementVisitor.java:346)
+	at org.jrubyparser.ast.DefnNode.accept(DefnNode.java:51)
+	at com.aptana.ruby.core.ast.AbstractVisitor.acceptNode(AbstractVisitor.java:53)
+	at com.aptana.ruby.core.ast.InOrderVisitor.visitNewlineNode(InOrderVisitor.java:525)
+	at org.jrubyparser.ast.NewlineNode.accept(NewlineNode.java:67)
+	at com.aptana.ruby.core.ast.AbstractVisitor.acceptNode(AbstractVisitor.java:37)
+	at com.aptana.ruby.core.ast.InOrderVisitor.visitClassNode(InOrderVisitor.java:213)
+	at com.aptana.ruby.core.ast.SourceElementVisitor.visitClassNode(SourceElementVisitor.java:260)
+	at org.jrubyparser.ast.ClassNode.accept(ClassNode.java:68)
+	at com.aptana.ruby.core.ast.AbstractVisitor.acceptNode(AbstractVisitor.java:53)
+	at com.aptana.ruby.core.ast.InOrderVisitor.visitNewlineNode(InOrderVisitor.java:525)
+	at org.jrubyparser.ast.NewlineNode.accept(NewlineNode.java:67)
+	at com.aptana.ruby.core.ast.AbstractVisitor.acceptNode(AbstractVisitor.java:37)
+	at com.aptana.ruby.core.ast.InOrderVisitor.visitModuleNode(InOrderVisitor.java:517)
+	at com.aptana.ruby.core.ast.SourceElementVisitor.visitModuleNode(SourceElementVisitor.java:824)
+	at org.jrubyparser.ast.ModuleNode.accept(ModuleNode.java:66)
+	at com.aptana.ruby.core.ast.AbstractVisitor.acceptNode(AbstractVisitor.java:53)
+	at com.aptana.ruby.core.ast.InOrderVisitor.visitNewlineNode(InOrderVisitor.java:525)
+	at org.jrubyparser.ast.NewlineNode.accept(NewlineNode.java:67)
+	at com.aptana.ruby.core.ast.AbstractVisitor.acceptNode(AbstractVisitor.java:37)
+	at com.aptana.ruby.core.ast.InOrderVisitor.visitRootNode(InOrderVisitor.java:668)
+	at com.aptana.ruby.core.ast.SourceElementVisitor.visitRootNode(SourceElementVisitor.java:848)
+	at org.jrubyparser.ast.RootNode.accept(RootNode.java:84)
+	at com.aptana.ruby.core.ast.AbstractVisitor.acceptNode(AbstractVisitor.java:53)
+	at com.aptana.ruby.internal.core.index.RubyFileIndexingParticipant.indexAST(RubyFileIndexingParticipant.java:73)
+	at com.aptana.ruby.internal.core.index.RubyFileIndexingParticipant.indexSource(RubyFileIndexingParticipant.java:61)
+	at com.aptana.ruby.internal.core.index.RubyFileIndexingParticipant.index(RubyFileIndexingParticipant.java:37)
+	at com.aptana.index.core.IndexRequestJob.indexFileStores(IndexRequestJob.java:205)
+	at com.aptana.index.core.IndexContainerJob.run(IndexContainerJob.java:109)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.core.jobs 2 2 2013-01-15 08:40:14.609
+!MESSAGE Job found still running after platform shutdown.  Jobs should be canceled by the plugin that scheduled them during shutdown: org.eclipse.tm.internal.terminal.emulator.VT100TerminalControl$1
+!SESSION 2013-01-15 08:41:03.452 -----------------------------------------------
+eclipse.buildId=3.3.1.201212171919
+java.version=1.6.0_24
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY com.aptana.ruby.core 4 0 2013-01-15 08:41:28.939
+!MESSAGE (eval):1: Use RbConfig instead of obsolete and deprecated Config.
+(eval):1: warning: variable $= is no longer effective
+(eval):1: warning: variable $KCODE is no longer effective
+(eval):1: warning: variable $KCODE is no longer effective
+C:/Users/piliseal/.eclipse/org.eclipse.platform_3.7.0_1461546708/configuration/org.eclipse.osgi/bundles/90/1/.cp/ruby/core_stubber.rb:180:in `eval': Permission denied - C:\Users\piliseal\Desktop\RPGProject\.metadata\.plugins\com.aptana.ruby.core\-941821722\4 (Errno::EACCES)
+	from C:/Users/piliseal/.eclipse/org.eclipse.platform_3.7.0_1461546708/configuration/org.eclipse.osgi/bundles/90/1/.cp/ruby/core_stubber.rb:180:in `eval'
+	from C:/Users/piliseal/.eclipse/org.eclipse.platform_3.7.0_1461546708/configuration/org.eclipse.osgi/bundles/90/1/.cp/ruby/core_stubber.rb:180:in `block (3 levels) in <main>'
+	from C:/Users/piliseal/.eclipse/org.eclipse.platform_3.7.0_1461546708/configuration/org.eclipse.osgi/bundles/90/1/.cp/ruby/core_stubber.rb:179:in `each'
+	from C:/Users/piliseal/.eclipse/org.eclipse.platform_3.7.0_1461546708/configuration/org.eclipse.osgi/bundles/90/1/.cp/ruby/core_stubber.rb:179:in `block (2 levels) in <main>'
+	from C:/Users/piliseal/.eclipse/org.eclipse.platform_3.7.0_1461546708/configuration/org.eclipse.osgi/bundles/90/1/.cp/ruby/core_stubber.rb:178:in `open'
+	from C:/Users/piliseal/.eclipse/org.eclipse.platform_3.7.0_1461546708/configuration/org.eclipse.osgi/bundles/90/1/.cp/ruby/core_stubber.rb:178:in `block in <main>'
+	from C:/Users/piliseal/.eclipse/org.eclipse.platform_3.7.0_1461546708/configuration/org.eclipse.osgi/bundles/90/1/.cp/ruby/core_stubber.rb:152:in `each'
+	from C:/Users/piliseal/.eclipse/org.eclipse.platform_3.7.0_1461546708/configuration/org.eclipse.osgi/bundles/90/1/.cp/ruby/core_stubber.rb:152:in `<main>'
+
