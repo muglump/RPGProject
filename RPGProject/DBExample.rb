@@ -2,11 +2,11 @@ require 'sqlite3'
 
 begin
   db = SQLite3::Database.open "RPGChar.db"
-  db.execute "CREATE TABLE IF NOT EXISTS User(userID INTEGER PRIMARY KEY, name TEXT, password TEXT)"
+  db.execute "CREATE TABLE IF NOT EXISTS Test(userID INTEGER PRIMARY KEY, name TEXT, password TEXT)"
   
-  db.execute "INSERT INTO User VALUES(1, 'Bob', 'asdf')"
+  db.execute "INSERT INTO Test VALUES(1, 'Bob', 'asdf')"
   
-  stm = db.prepare "SELECT * FROM User WHERE userID=? AND name=?"
+  stm = db.prepare "SELECT * FROM Test WHERE userID=? AND name=?"
   stm.bind_params( 1, 'Bob' )
   rows = stm.execute
   
@@ -14,7 +14,7 @@ begin
   
   stm.close if stm
   
-  stm = db.prepare "DELETE FROM User WHERE userID=?"
+  stm = db.prepare "DELETE FROM Test WHERE userID=?"
   stm.execute(1)
 
 rescue SQLite3::Exception => e
