@@ -1,0 +1,1 @@
+*.haml files go here
