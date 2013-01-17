@@ -1,5 +1,7 @@
 http://www.sinatrarb.com/
-http://zetcode.com/db/sqliteruby/connect/
 
-http://www.sqlite.org/foreignkeys.html
-http://stackoverflow.com/questions/734689/sqlite-primary-key-on-multiple-columns
+gem 
+http://dev.mysql.com/downloads/installer/
+http://dev.mysql.com/downloads/connector/c/
+
+Copy libmysql.dll from MySQL/Connector C 6.0.2/lib to System32

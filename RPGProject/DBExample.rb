@@ -1,27 +1,28 @@
-require 'sqlite3'
+require 'mysql2'
 
 begin
-  db = SQLite3::Database.open "RPGChar.db"
-  db.execute "CREATE TABLE IF NOT EXISTS Test(userID INTEGER PRIMARY KEY, name TEXT, password TEXT)"
+  file = File.new("Password.txt", "r")
+  username = file.gets.strip
+  password = file.gets.strip
   
-  db.execute "INSERT INTO Test VALUES(1, 'Bob', 'asdf')"
-  
-  stm = db.prepare "SELECT * FROM Test WHERE userID=? AND name=?"
-  stm.bind_params( 1, 'Bob' )
-  rows = stm.execute
-  
-  puts rows.next
-  
-  stm.close if stm
-  
-  stm = db.prepare "DELETE FROM Test WHERE userID=?"
-  stm.execute(1)
-
-rescue SQLite3::Exception => e
+  db = Mysql2::Client.new(
+      :host => '127.0.0.1', 
+      :database => "rpgchar", 
+      :username => username, 
+      :password => password)
+      
+      db.query("INSERT INTO User(name, password) VALUES('Andrew', 'asdf');")
+      rows = db.query("SELECT * FROM User;")
+      rows.each do |row|
+        puts row
+      end
+      
+      db.query("DELETE FROM User WHERE name='Andrew';")
+      
+rescue Mysql2::Error => e
   puts "Exception occured"
   puts e
   
 ensure 
-  stm.close if stm
   db.close if db
 end
