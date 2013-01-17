@@ -1,0 +1,29 @@
+<%= form_for(@user_plays_in_game) do |f| %>
+  <% if @user_plays_in_game.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@user_plays_in_game.errors.count, "error") %> prohibited this user_plays_in_game from being saved:</h2>
+
+      <ul>
+      <% @user_plays_in_game.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :userID %><br />
+    <%= f.number_field :userID %>
+  </div>
+  <div class="field">
+    <%= f.label :gameID %><br />
+    <%= f.number_field :gameID %>
+  </div>
+  <div class="field">
+    <%= f.label :charID %><br />
+    <%= f.number_field :charID %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

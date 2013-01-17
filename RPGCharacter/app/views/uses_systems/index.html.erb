@@ -1,0 +1,25 @@
+<h1>Listing uses_systems</h1>
+
+<table>
+  <tr>
+    <th>Userid</th>
+    <th>Systemid</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @uses_systems.each do |uses_system| %>
+  <tr>
+    <td><%= uses_system.userID %></td>
+    <td><%= uses_system.systemId %></td>
+    <td><%= link_to 'Show', uses_system %></td>
+    <td><%= link_to 'Edit', edit_uses_system_path(uses_system) %></td>
+    <td><%= link_to 'Destroy', uses_system, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Uses system', new_uses_system_path %>

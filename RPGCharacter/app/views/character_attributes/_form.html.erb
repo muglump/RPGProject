@@ -1,0 +1,29 @@
+<%= form_for(@character_attribute) do |f| %>
+  <% if @character_attribute.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@character_attribute.errors.count, "error") %> prohibited this character_attribute from being saved:</h2>
+
+      <ul>
+      <% @character_attribute.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :charID %><br />
+    <%= f.number_field :charID %>
+  </div>
+  <div class="field">
+    <%= f.label :attrID %><br />
+    <%= f.number_field :attrID %>
+  </div>
+  <div class="field">
+    <%= f.label :value %><br />
+    <%= f.number_field :value %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

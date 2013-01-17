@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Userid:</b>
+  <%= @uses_system.userID %>
+</p>
+
+<p>
+  <b>Systemid:</b>
+  <%= @uses_system.systemId %>
+</p>
+
+
+<%= link_to 'Edit', edit_uses_system_path(@uses_system) %> |
+<%= link_to 'Back', uses_systems_path %>

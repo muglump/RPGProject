@@ -1,4 +1,12 @@
 RPGCharacter::Application.routes.draw do
+  resources :character_attributes
+
+  resources :permissions
+
+  resources :user_plays_in_games
+
+  resources :uses_systems
+
   resources :users
 
   resources :attributes

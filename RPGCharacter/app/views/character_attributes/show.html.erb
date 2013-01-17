@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Charid:</b>
+  <%= @character_attribute.charID %>
+</p>
+
+<p>
+  <b>Attrid:</b>
+  <%= @character_attribute.attrID %>
+</p>
+
+<p>
+  <b>Value:</b>
+  <%= @character_attribute.value %>
+</p>
+
+
+<%= link_to 'Edit', edit_character_attribute_path(@character_attribute) %> |
+<%= link_to 'Back', character_attributes_path %>
