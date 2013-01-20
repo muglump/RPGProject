@@ -2,5 +2,9 @@ require 'sinatra'
 require 'haml'
 
 get '/' do
-  "Hello world!"
+  haml :login 
+end
+
+post '/success' do
+  haml :success, :locals => params
 end

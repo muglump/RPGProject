@@ -1,7 +1,6 @@
 http://www.sinatrarb.com/
 
-gem 
+gem install mysql2
 http://dev.mysql.com/downloads/installer/
 http://dev.mysql.com/downloads/connector/c/
-
 Copy libmysql.dll from MySQL/Connector C 6.0.2/lib to System32
