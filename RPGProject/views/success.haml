@@ -8,9 +8,6 @@
   %body
     %div Hello World
     
-    - name = locals[:username]
-    - pass = locals[:password]
+    - return_code = locals[:return_code]
     
-    %div= "name = " + name
-    %div= "pass = " + pass
-    
+    %div= "return code = " + return_code
