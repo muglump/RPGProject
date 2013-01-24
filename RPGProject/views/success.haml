@@ -8,6 +8,9 @@
   %body
     %div Hello World
     
-    - return_code = locals[:return_code]
-    
-    %div= "return code = " + return_code
+    %div
+      %table
+        - locals[:return_code].each do |code|
+          
+          %tr
+            %td= "return code = " + code["return_code"].to_s
