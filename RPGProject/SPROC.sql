@@ -23,15 +23,18 @@ BEGIN
  	RETURN 0;
 END //
 
-DROP FUNCTION RPGChar.LogInUser
-DELIMITER //
+DROP FUNCTION RPGChar.LogInUser;
+
 -- Returns 0 on successful login
---Returns 1 on invalid login information
+-- Returns 1 on invalid login information
+-- TODO: Change to a procedure that returns success and uid
 CREATE FUNCTION RPGChar.LogInUser(
 		_Username text, 
 		_Password text)
 RETURNS int
 BEGIN 
- IF (Select Password from User Where name = _ Username) = _Password THEN
- 	RETUrn 0;
- return 1;
+	IF (SELECT Password FROM User WHERE name = _Username) = _Password THEN
+		RETURN 0;
+	END IF;
+	RETURN 1;
+END //

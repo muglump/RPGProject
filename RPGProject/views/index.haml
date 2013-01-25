@@ -1,0 +1,23 @@
+!!! 5
+
+%html
+  %head
+    %title RPG Character Database
+    %link{:rel => "stylesheet", :type => "text/css", :href => url("style.css")}
+ 
+  %body
+    %div Login Here
+    
+    %form{ :action => '/login', :method => "POST"}
+      %fieldset
+        %ol
+          %li
+            %label{:for => "userame"} username:
+            %input{:type => "text", :name => "username", :value => @username}
+          %li
+            %label{:for => "password"} password:
+            %input{:type => "password", :name => "password", :value => @password}
+        %input{:type => "submit"}
+    
+    %div 
+      %a{:title => "New user?", :href => "/register"} New user?

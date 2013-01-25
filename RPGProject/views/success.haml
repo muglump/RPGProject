@@ -5,12 +5,11 @@
     %title RPG Character Database
     %link{:rel => "stylesheet", :type => "text/css", :href => url("style.css")}
  
-  %body
-    %div Hello World
-    
-    %div
-      %table
-        - locals[:return_code].each do |code|
-          
-          %tr
-            %td= "return code = " + code["return_code"].to_s
+  %body 
+    - rc = locals[:return_code]
+    - if rc == 0
+      %div Successful account creation
+    - else
+      %div Failed to create account.
+      - if rc == 1
+        %div User already in database
