@@ -1,3 +1,0 @@
-http://bcrypt-ruby.rubyforge.org/
-http://guides.rubyonrails.org/getting_started.html
-https://github.com/robwagner33/Reciplease
