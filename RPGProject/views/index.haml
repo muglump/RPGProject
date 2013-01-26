@@ -6,18 +6,11 @@
     %link{:rel => "stylesheet", :type => "text/css", :href => url("style.css")}
  
   %body
-    %div Login Here
-    
-    %form{ :action => '/login', :method => "POST"}
-      %fieldset
-        %ol
-          %li
-            %label{:for => "userame"} username:
-            %input{:type => "text", :name => "username", :value => @username}
-          %li
-            %label{:for => "password"} password:
-            %input{:type => "password", :name => "password", :value => @password}
-        %input{:type => "submit"}
-    
-    %div 
-      %a{:title => "New user?", :href => "/register"} New user?
+    %div.Message
+      %h1 Welcome to the RPGCharacter.
+      %p This is where we will word vomit things about this project.
+      %input{:type => "Button", :value => "Register", :onclick => "window.location.href='/register'"}
+      %input{:type => "Button", :value => "Register", :onclick => "window.location.href='/login'"}
+      -#%a{:type => "button", :title => "Login", :href => "/login"} Login
+      -#%a{:type => "button", :title => "Register", :href => "/register"} Register
+      

@@ -33,11 +33,10 @@ get '/register?' do
   haml :register
 end
 
-=begin
+
 get '/login' do
-  haml :index
+  haml :login
 end
-=end
 
 post '/login' do
   # get the name and password posted
